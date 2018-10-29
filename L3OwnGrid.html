@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS Grid </title>
+		<style type="text/css">
+			*{
+				box-sizing: border-box;
+			}
+			body{
+				background:pink;
+			}
+			.container{
+				background: black;
+				min-height: 100vh;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows:1fr 1fr 1fr;
+				grid-template-areas:
+				 	"p1 p2 p2"
+				 	"p3 p3 p4"
+				 	"p5 p6 p6";
+				 	grid-gap: 10px;
+				 	padding:10px;
+
+
+			}
+			.item{
+				background: blue;
+				min-height: 100px;
+				min-width: 100px;
+			}
+			#photo1{
+				grid-area: p1;
+				background: url(https://media.comicbook.com/2018/09/my-hero-academia-deku-1132715-1280x0.jpeg);
+				background-size:cover;
+				background-position:center;
+			}
+			#photo2{
+				grid-area: p2;
+				background: url(https://sm.ign.com/t/ign_in/gallery/m/my-hero-ac/my-hero-academia-episode-40-wild-wild-pussycats_8nvd.640.png);
+				background-size:cover;
+				background-position:center;
+
+			}
+			#photo3{
+				grid-area: p3;
+				background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqGB2J-1imjYAVl9EaDwMBGypZIlxfhrrWN5g43Y8eKsOq7Bww);
+				background-size:cover;
+				background-position:center;
+			}
+			#photo4{
+				grid-area: p4;
+				background: url(https://i.pinimg.com/originals/69/a8/58/69a858aed9ce38ee0ed30c1725d67767.jpg);
+				background-size:cover;
+				background-position:center;
+			}
+			#photo5{
+				grid-area: p5;
+				background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVVsueytmkj8tv_hUQ-sXIXY9ryKtm_hm1cmm-Q29D7asJFSPBxQ);
+				background-size:cover;
+				background-position:center;
+			}
+			#photo6{
+				grid-area: p6;
+				background: url(https://img1.ak.crunchyroll.com/i/spire1-tmb/99acd2fa2db8957f8fb51a7024ebdb5d1523692161_full.jpg);
+				background-size:cover;
+				background-position:center;
+			}		
+		</style>
+</head>
+	<body>
+		<div class="container">
+			<div class="item" id="photo1">
+			</div>
+
+			<div class="item" id="photo2">
+			</div>
+
+			<div class="item" id="photo3">
+			</div>
+
+			<div class="item" id="photo4">
+			</div>
+
+			<div class="item" id="photo5">
+			</div>
+
+			<div class="item" id="photo6">
+			</div>
+		</div>
+	</body>
+</html>
